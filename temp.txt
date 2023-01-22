@@ -1,0 +1,16 @@
+        <script>
+        
+            const http = new EasyHTTP;
+
+            const data = {
+                Post_id : id
+            }
+
+            http.put('http://127.0.0.1:8000/save', data)
+            .then(data => console.log(data))
+            .catch(err => console.log(err));
+        
+        </script>
+
+
+href="{% url 'favourite' post.id %}"
